@@ -10,7 +10,6 @@ Patch0:		nbsmtp-1.00_DESTDIR.patch
 Patch1:		nbsmtp-1.00_gcc41.patch
 Provides:	sendmail-command
 BuildRequires:	openssl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 nbSMTP is a simple SMTP client suitable to run in chroot jails, in embeded
