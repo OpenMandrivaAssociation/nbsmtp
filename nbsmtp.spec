@@ -56,3 +56,39 @@ fi
 %attr(0755,root,root) %{_sbindir}/nbsmtp
 %attr(0644,root,root) %{_mandir}/man5/*
 %attr(0644,root,root) %{_mandir}/man8/*
+
+
+%changelog
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 1.00-7mdv2011.0
++ Revision: 613003
+- the mass rebuild of 2010.1 packages
+
+* Fri Apr 16 2010 Funda Wang <fwang@mandriva.org> 1.00-6mdv2010.1
++ Revision: 535334
+- rebuild
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.00-5mdv2010.0
++ Revision: 430156
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 1.00-4mdv2009.0
++ Revision: 253646
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.00-2mdv2008.1
++ Revision: 136618
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Sep 09 2007 Oden Eriksson <oeriksson@mandriva.com> 1.00-2mdv2008.0
++ Revision: 83819
+- rebuild
+- Import nbsmtp
+
+
+
+* Thu Aug 03 2006 Oden Eriksson <oeriksson@mandriva.com> 1.00-1mdv2007.0
+- initial Mandriva package
+- added P0,P1 from opensuse
