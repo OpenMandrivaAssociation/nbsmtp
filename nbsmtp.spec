@@ -1,4 +1,4 @@
-Summary:	nbSMTP: no-brainer SMTP
+Summary:	: no-brainer SMTP
 Name:		nbsmtp
 Version:	1.00
 Release:	%mkrel 7
