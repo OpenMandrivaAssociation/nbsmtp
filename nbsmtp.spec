@@ -1,7 +1,7 @@
-Summary:	: no-brainer SMTP
+Summary:	No-brainer SMTP
 Name:		nbsmtp
 Version:	1.00
-Release:	%mkrel 7
+Release:	8
 License:	GPL
 Group:		System/Servers
 URL:		http://nbsmtp.ferdyx.org/
@@ -10,7 +10,6 @@ Patch0:		nbsmtp-1.00_DESTDIR.patch
 Patch1:		nbsmtp-1.00_gcc41.patch
 Provides:	sendmail-command
 BuildRequires:	openssl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 nbSMTP is a simple SMTP client suitable to run in chroot jails, in embeded
@@ -34,12 +33,10 @@ runs on any Unix flavor). Here you can read more AboutNbsmtp.
 %make
 
 %install
-rm -rf %{buildroot}
 
 %makeinstall_std
 
 %clean
-rm -rf %{buildroot}
 
 %post
 update-alternatives --install %{_sbindir}/sendmail sendmail-command %{_sbindir}/nbsmtp 5
@@ -51,7 +48,6 @@ fi
 
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog DOCS INSTALL
 %attr(0755,root,root) %{_sbindir}/nbsmtp
 %attr(0644,root,root) %{_mandir}/man5/*
