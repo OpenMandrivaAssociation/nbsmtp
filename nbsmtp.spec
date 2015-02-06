@@ -1,7 +1,7 @@
 Summary:	No-brainer SMTP
 Name:		nbsmtp
 Version:	1.00
-Release:	8
+Release:	9
 License:	GPL
 Group:		System/Servers
 URL:		http://nbsmtp.ferdyx.org/
