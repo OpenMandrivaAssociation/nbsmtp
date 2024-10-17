@@ -4,7 +4,7 @@ Version:	1.00
 Release:	9
 License:	GPL
 Group:		System/Servers
-URL:		http://nbsmtp.ferdyx.org/
+URL:		https://nbsmtp.ferdyx.org/
 Source0:	http://www.gentoo-es.org/~ferdy/%{name}-%{version}.tar.bz2
 Patch0:		nbsmtp-1.00_DESTDIR.patch
 Patch1:		nbsmtp-1.00_gcc41.patch
